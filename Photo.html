@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie Tournoi Volley</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f9f9f9, #dff1ff);
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 900px;
+      background: #fff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    h1 {
+      color: #0077cc;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .big-media {
+      width: 100%;
+      margin: 20px auto;
+    }
+
+    .big-media video {
+      width: 100%;
+      max-height: 500px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .affiche {
+      width: 50%;
+      margin: 20px auto;
+    }
+
+    .affiche img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 768px) {
+      .affiche { width: 90%; }
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #0077cc;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🏐 Galerie Tournoi de Volley-ball</h1>
+    <p>Quelques moments forts en photo et en vidéo 🎥📸</p>
+
+    <!-- Affiche réduite -->
+    <div class="affiche">
+      <img src="./AfficheVolley.png" alt="Affiche du tournoi">
+    </div>
+
+    <!-- Grande vidéo principale -->
+    <div class="big-media">
+      <video controls>
+        <source src="./18FEB177-25C4-4AAA-8584-F1C2E8FF19A0.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+    </div>
+
+  </div>
+</body>
+</html>
